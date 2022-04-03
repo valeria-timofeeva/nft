@@ -2,7 +2,7 @@ import { task } from "hardhat/config";
 
 const contractInfo = require('./DeployedSealContracts1155.json');
 
-task("mintSeal1155", "Approve use coins for contract")
+task("mintSeal1155", "Mint nft")
     .addParam("account", "Target address")
     .addParam("tokenid", "Token id")
     .addParam("amount", "Tokens amount")

@@ -11,6 +11,7 @@ describe("Seal Collection erc721", function () {
   const symbol = "SCN";
   let clean: any;
   let owner: SignerWithAddress;
+  let tokenURI = "test URI";
 
   async function deployContract() {
     const SealCollectionFactory = await ethers.getContractFactory("SealCollection721")
@@ -48,25 +49,20 @@ describe("Seal Collection erc721", function () {
     });
   });
 
+  describe("Burn", function () {
+    it("Should burn token", async function () {
+      await sealCollectionContract.safeMint(owner.address, tokenURI);
+      await sealCollectionContract.burn(0)
+      expect(await sealCollectionContract.balanceOf(owner.address)).to.equal(0);
+    });
+  });
+
   describe("Mint", function () {
-
-    let tokenURI = "test URI";
-
     it("Should mint token for address", async function () {
       await sealCollectionContract.safeMint(owner.address, tokenURI);
       expect(await sealCollectionContract.balanceOf(owner.address)).to.equal(1);
       expect(await sealCollectionContract.ownerOf(0)).to.equal(owner.address);
       expect(await sealCollectionContract.tokenURI(0)).to.equal("test URI");
-    });
-
-    it("Should revert mint when all tokens alredy minted", async function () {
-
-    });
-  });
-
-  describe("Get token URI", function () {
-    it("Should check token URI", async function () {
-
     });
   });
 });

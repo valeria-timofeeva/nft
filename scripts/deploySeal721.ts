@@ -16,7 +16,7 @@ async function main() {
 
   // We get the contract to deploy
   const SealCollectionFactory = await ethers.getContractFactory("SealCollection721");
-  const sealCollectionContract = await SealCollectionFactory.deploy();
+  const sealCollectionContract = await SealCollectionFactory.deploy("SealCollection721", "SCN");
 
   await sealCollectionContract.deployed();
 
@@ -25,7 +25,7 @@ async function main() {
     sealCollectionAdress: sealCollectionContract.address,
   };
 
-  fs.writeFile("./tasks/DeployedSealContracts.json", JSON.stringify(contracts), (err) => {
+  fs.writeFile("./tasks/DeployedSealContracts721.json", JSON.stringify(contracts), (err) => {
     if (err) throw err;
   });
 }

@@ -26,6 +26,10 @@ contract SealCollection721 is ERC721, ERC721URIStorage, Ownable {
         super._burn(tokenId);
     }
 
+    function burn(uint256 tokenId) public onlyOwner {
+        _burn(tokenId);
+    }
+
     function tokenURI(uint256 tokenId)
         public
         view
