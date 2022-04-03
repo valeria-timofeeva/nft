@@ -1,0 +1,12 @@
+{
+    "description": "All pinnipeds — phocids (true seals), otariids (eared seals) and odobenids (walruses).",
+    "external_url": "https://example.io/{id}",
+    "image": "ipfs://QmbvMBVSYL4yedS647D5EXHA7ui1jUGT2jqtifTu3e4aK1",
+    "name": "Katy",
+    "attributes": [
+        {
+            "trait type": "big seal",
+            "value": "baby seal"
+        }
+    ]
+}

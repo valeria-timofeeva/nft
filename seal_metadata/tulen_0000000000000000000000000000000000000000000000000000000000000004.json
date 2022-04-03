@@ -1,0 +1,12 @@
+{
+    "description": "Seals generally prey on fish, but they will also eat eel, squid, octopus and lobster.",
+    "external_url": "https://example.io/{id}",
+    "image": "ipfs://QmSLWbBWKybbhHoWMPXw6A4Wb56HiFNafe2cujEihT6bcy",
+    "name": "Pupi",
+    "attributes": [
+        {
+            "trait type": "good seal",
+            "value": "baby seal"
+        }
+    ]
+}

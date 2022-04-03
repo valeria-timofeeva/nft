@@ -1,0 +1,12 @@
+{
+    "description": "Seals and sea lions are semiaquatic mammals that are in a group called pinnipeds.",
+    "external_url": "https://example.io/{id}",
+    "image": "ipfs://QmcqTiUYj7Gd2Mx7pHynFkkALLbRvYKzj1LsGDYgRMY1PL",
+    "name": "Peter",
+    "attributes": [
+        {
+            "trait type": "true seal",
+            "value": "baby seal"
+        }
+    ]
+}

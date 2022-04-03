@@ -1,0 +1,12 @@
+{
+    "description": "Baby seals, called pups, will stay on land until their waterproof fur grows in.",
+    "external_url": "https://example.io/{id}",
+    "image": "ipfs://QmdhXAfcSoxGVssgEiDzQeXb869cSXHGKrx1iBM9qY6mgr",
+    "name": "Adam",
+    "attributes": [
+        {
+            "trait type": "commom seal",
+            "value": "baby seal"
+        }
+    ]
+}

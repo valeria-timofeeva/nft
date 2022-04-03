@@ -1,0 +1,12 @@
+{
+    "description": "Fur seals and sea lions live in the Northern Pacific between Asia.",
+    "external_url": "https://example.io/{id}",
+    "image": "ipfs://QmcvdtCtWN5ixmLggtztx1nsoSzGWKsNibe4vuBmeDi3hL",
+    "name": "Berg",
+    "attributes": [
+        {
+            "trait type": "funny seal",
+            "value": "baby seal"
+        }
+    ]
+}
